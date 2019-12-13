@@ -4,7 +4,7 @@ import Cats from './components/Cats';
 
 import SearchBar from './components/NameSearch';
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, HashRouter } from 'react-router-dom';
 import CatParams from './components/CatParams';
 
 const apiEndPoint = 'http://api.thecatapi.com/v1/breeds';
@@ -72,14 +72,16 @@ class App extends Component {
         <h2 className="center ">The Cat API</h2>
 
         <SearchBar handleChange={this.handleChange} searchText={searchText} />
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={props => <Cats {...props} cats={filteredCatsByName} />}
-          />
-          <Route path="/:cat_id" component={CatParams} />
-        </Switch>
+        <HashRouter basename="/">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={props => <Cats {...props} cats={filteredCatsByName} />}
+            />
+            <Route path="/:cat_id" component={CatParams} />
+          </Switch>
+        </HashRouter>
       </div>
     );
   }
