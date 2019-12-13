@@ -1,9 +1,21 @@
 .App {
   text-align: center;
 }
-
+.para {
+ font-size: 30px;
+}
+.search {
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  margin-top: 60px;
+}
 .App-logo {
   height: 40vmin;
+}
+.origin {
+  font-size: 40px;
 }
 
 .App-header {
@@ -20,6 +32,6 @@
 .App-link {
   color: #09d3ac;
 }
-.trial{
+.trial {
   display: flex;
 }

@@ -1,45 +1,48 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 //import Cat from './Cat'
 
 class Cats extends Component {
-  render(){
-    const total = <p className="center blue-text darken-7">we are currently having {this.props.cats.length} Cats in our database</p>
+  render() {
+    const total = (
+      <p className=" center green-text accent-4 para ">
+        we are currently having {this.props.cats.length} Cats in our database
+      </p>
+    );
     const results = this.props.cats.length ? (
-      this.props.cats.map(cat =>{
-
-        return(
-          <div className=" card orange darken-4" key={cat.id}>
-            <div className="card-content white-text  ">
-
-            <span className="card-title">
-            Name: {cat.name}
-            </span>
-            <span className="card-title">Origin: {cat.origin}</span>
-            <p className="">{cat.description}</p>
+      this.props.cats.map(cat => {
+        return (
+          <div className="row center" key={cat.id}>
+            <div className="col s12 m6">
+              <div className=" card yellow darken-1">
+                <div className="card-content white-text  ">
+                  <Link to={'/' + cat.id}>
+                    <span className="card-title red-text accent-4">
+                      Name: {cat.name}
+                    </span>
+                  </Link>
+                    <span className="card-title origin black-text accent-4">
+                      Origin: {cat.origin}
+                    </span>
+                    <p className="black-text accent-4">{cat.description}</p>
+                </div>
+              </div>
             </div>
           </div>
-        )
+        );
       })
-    ): (
-     
-      
+    ) : (
       <p>There are no cats available</p>
-    )
+    );
 
-    return ( 
+    return (
       <div>
         {total}
-      
-      {results}
+
+        {results}
       </div>
-     );
+    );
   }
-  
-} 
+}
 
- 
 export default Cats;
-
-
-
- 
