@@ -72,16 +72,15 @@ class App extends Component {
         <h2 className="center ">The Cat API</h2>
 
         <SearchBar handleChange={this.handleChange} searchText={searchText} />
-        <HashRouter basename="/">
-          <Switch>
-            <Route
-              exact
-              path="/"
-              render={props => <Cats {...props} cats={filteredCatsByName} />}
-            />
-            <Route path="/:cat_id" component={CatParams} />
-          </Switch>
-        </HashRouter>
+
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => <Cats {...props} cats={filteredCatsByName} />}
+          />
+          <Route path="/:cat_id" component={CatParams} />
+        </Switch>
       </div>
     );
   }
