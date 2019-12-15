@@ -2,17 +2,17 @@ import React from 'react';
 const SearchBar = ({ handleChange, searchText }) => {
   return (
     <>
-      <div class="row input">
-        <div class="input-field col s6">
+      <div className="row input">
+        <div className="input-field col s6">
           <i className="material-icons prefix">search</i>
           <input
             onChange={handleChange}
             value={searchText}
             id="search"
             type="text"
-            class="validate"
+            className="validate"
           />
-          <label class="active" htmlFor="search">
+          <label className="active" htmlFor="search">
             Search By Name
           </label>
         </div>

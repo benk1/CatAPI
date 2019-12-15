@@ -2,7 +2,7 @@
   "name": "catapi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://benk1.github.io/CatAPI/",
+  "homepage": "https://benk1.github.io/CatAPI",
   "dependencies": {
     "axios": "^0.19.0",
     "deploy": "^1.0.3",
