@@ -7,7 +7,7 @@ import './App.css';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import CatParams from './components/CatParams';
 
-const apiEndPoint = 'http://api.thecatapi.com/v1/breeds';
+const apiEndPoint = 'https://api.thecatapi.com/v1/breeds';
 
 /*const searchingForName = (name) =>{
   console.log('cats name',name);

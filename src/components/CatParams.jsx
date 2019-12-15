@@ -9,7 +9,7 @@ class CatParams extends Component {
   componentDidMount() {
     //console.log(this.props);
     let id = this.props.match.params.cat_id;
-    axios.get('http://api.thecatapi.com/v1/breeds/' + id).then(res => {
+    axios.get('https://api.thecatapi.com/v1/breeds/' + id).then(res => {
       this.setState({
         cat: res.data
       });
