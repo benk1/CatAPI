@@ -17,13 +17,22 @@ class Cats extends Component {
               <div className=" card yellow darken-1">
                 <div className="card-content white-text  ">
                   <Link to={'/' + cat.id}>
-                    <span className="card-title red-text accent-4">
+                    <span className="card-title blue-text lighten-5">
                       Name: {cat.name}
                     </span>
                   </Link>
+                  
                     <span className="card-title origin black-text accent-4">
                       Origin: {cat.origin}
                     </span>
+                    
+                    <span className="card-title origin black-text accent-4">
+                      Life Span: {cat.life_span} Years
+                    </span>
+                    <span className="card-title origin black-text accent-4">
+                      Weight: {cat.weight.metric} Kg
+                    </span>
+                    
                     <p className="black-text accent-4">{cat.description}</p>
                 </div>
               </div>

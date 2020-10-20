@@ -21,7 +21,12 @@ class CatParams extends Component {
     const catResults = cat ? (
       <div className="post">
         <h4 className="black-text  accent-4">Name: {cat.name}</h4>
+        <div className="countryFlag">
+            <img src={cat.vetstreet_url} alt="cat_url"/>
+          </div>
         <h4 className="card-title black-text  accent-4">Origin: {cat.origin}</h4>
+        <span className="card-title">Temperament: {cat.temperament}</span>
+        <h4 className="card-title">Weight: {cat.weight.metric} Kg</h4>
         <p className="black-text  accent-4">Description: {cat.description}</p>
       </div>
     ) : (
