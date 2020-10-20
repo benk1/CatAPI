@@ -12,12 +12,12 @@ class Cats extends Component {
     const results = this.props.cats.length ? (
       this.props.cats.map(cat => {
         return (
-          <div className="row center" key={cat.id}>
+          <div className="row center " key={cat.id}>
             <div className="col s12 m6">
               <div className=" card yellow darken-1">
                 <div className="card-content white-text  ">
                   <Link to={'/' + cat.id}>
-                    <span className="card-title blue-text lighten-5">
+                    <span className="card-title blue-text darken-5">
                       Name: {cat.name}
                     </span>
                   </Link>

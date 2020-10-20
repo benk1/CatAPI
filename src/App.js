@@ -68,7 +68,7 @@ class App extends Component {
     );
 
     return (
-      <div className="container">
+      <div className="container ">
         <h2 className="center ">The Cat API</h2>
 
         <SearchBar handleChange={this.handleChange} searchText={searchText} />

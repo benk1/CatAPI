@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -40,4 +48,7 @@ img {
   height: 20vh;
   border-radius: 0.3rem;
   box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+}
+p{
+  font-size: 22px;
 }
