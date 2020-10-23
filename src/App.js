@@ -26,64 +26,64 @@ const searchingForCountry = (origin) =>{
 }*/
 
 class App extends Component {
-  state = {
-    cats: [],
-    searchText: ''
-  };
+	state = {
+		cats: [],
+		searchText: '',
+	};
 
-  async componentDidMount() {
-    const { data: cats } = await axios.get(apiEndPoint);
-    //console.log(cats.slice(0,5));
-    this.setState({
-      cats: cats
-    });
-  }
+	async componentDidMount() {
+		const { data: cats } = await axios.get(apiEndPoint);
+		//console.log(cats.slice(0,5));
+		this.setState({
+			cats: cats,
+		});
+	}
 
-  handleChange = e => {
-    const key = e.target.value.toLowerCase();
+	handleChange = (e) => {
+		const key = e.target.value.toLowerCase();
 
-    this.setState({
-      searchText: key
-    });
-  };
+		this.setState({
+			searchText: key,
+		});
+	};
 
-  nameSearch = () => {
-    const filteredCatsByName = this.state.cats.filter(cat =>
-      cat.name.toLowerCase().startsWith(this.state.searchText)
-    );
-    this.setState({
-      cats: filteredCatsByName
-    });
-  };
+	nameSearch = () => {
+		const filteredCatsByName = this.state.cats.filter((cat) =>
+			cat.name.toLowerCase().startsWith(this.state.searchText)
+		);
+		this.setState({
+			cats: filteredCatsByName,
+		});
+	};
 
-  render() {
-    const { cats, searchText } = this.state;
+	render() {
+		const { cats, searchText } = this.state;
 
-    const filteredCatsByName = cats.filter(cat =>
-      cat.name.toLowerCase().startsWith(searchText)
-    );
+		const filteredCatsByName = cats.filter((cat) =>
+			cat.name.toLowerCase().startsWith(searchText)
+		);
 
-    const filteredCatsByCountry = cats.filter(cat =>
-      cat.origin.toLowerCase().startsWith(searchText)
-    );
+		const filteredCatsByCountry = cats.filter((cat) =>
+			cat.origin.toLowerCase().startsWith(searchText)
+		);
 
-    return (
-      <div className="container ">
-        <h2 className="center ">The Cat API</h2>
+		return (
+			<div className='container'>
+				<h2 className='center '>The Cat API</h2>
 
-        <SearchBar handleChange={this.handleChange} searchText={searchText} />
+				<SearchBar handleChange={this.handleChange} searchText={searchText} />
 
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={props => <Cats {...props} cats={filteredCatsByName} />}
-          />
-          <Route path="/:cat_id" component={CatParams} />
-        </Switch>
-      </div>
-    );
-  }
+				<Switch>
+					<Route
+						exact
+						path='/'
+						render={(props) => <Cats {...props} cats={filteredCatsByName} />}
+					/>
+					<Route path='/:cat_id' component={CatParams} />
+				</Switch>
+			</div>
+		);
+	}
 }
 
 export default App;

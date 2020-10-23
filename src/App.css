@@ -1,54 +1,63 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .App {
-  text-align: center;
+	text-align: center;
 }
 .para {
- font-size: 30px;
+	font-size: 30px;
 }
 .search {
-  display: flex;
-  justify-content: space-around;
+	display: flex;
+	justify-content: space-around;
 }
 .input {
-  margin-top: 60px;
+	margin-top: 60px;
 }
 .App-logo {
-  height: 40vmin;
+	height: 40vmin;
 }
 .origin {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #09d3ac;
+	color: #09d3ac;
 }
 .trial {
-  display: flex;
+	display: flex;
 }
 img {
-  width: 20vh;
-  height: 20vh;
-  border-radius: 0.3rem;
-  box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+	width: 20vh;
+	height: 20vh;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
 }
-p{
-  font-size: 22px;
+p {
+	font-size: 22px;
+}
+.mainDiv {
+	display: flex;
+
+	flex-wrap: wrap;
+}
+
+.material-icons {
+    font-size:66px;
 }
