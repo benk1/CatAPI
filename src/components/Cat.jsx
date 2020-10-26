@@ -1,32 +1,32 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 const Cat = (props) => {
-	const { cat } = props;
+	const { id, name, origin, life_span, weight, description } = props.cat;
 	//console.log('my cat',cat.name);
 	return (
 		<>
-			<div className='row center' key={cat.id}>
-				<div className='col s12 m6'>
+			<div className='row center' key={id}>
+				<div className='col s12 m6 l8'>
 					<div className=' card orange lighten-1'>
 						<div className='card-content white-text  '>
-							<Link to={'/' + cat.id}>
+							<Link to={'/' + id}>
 								<span className='card-title blue-text darken-5'>
-									Name: {cat.name}
+									Name: {name}
 								</span>
 							</Link>
 
 							<span className='card-title origin black-text accent-4'>
-								Origin: {cat.origin}
+								Origin: {origin}
 							</span>
 
 							<span className='card-title origin black-text accent-4'>
-								Life Span: {cat.life_span} Years
+								Life Span: {life_span} Years
 							</span>
 							<span className='card-title origin black-text accent-4'>
-								Weight: {cat.weight.metric} Kg
+								Weight: {weight.metric} Kg
 							</span>
 
-							<p className='black-text accent-4'>{cat.description}</p>
+							<p className='black-text accent-4'>{description}</p>
 						</div>
 					</div>
 				</div>

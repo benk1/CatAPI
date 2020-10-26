@@ -63,10 +63,6 @@ class App extends Component {
 			cat.name.toLowerCase().startsWith(searchText)
 		);
 
-		const filteredCatsByCountry = cats.filter((cat) =>
-			cat.origin.toLowerCase().startsWith(searchText)
-		);
-
 		return (
 			<div className='container'>
 				<h2 className='center '>The Cat API</h2>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Cat from './Cat';
+//import Cat from './Cat';
 class CatParams extends Component {
 	state = {
 		cat: null,
@@ -16,7 +16,6 @@ class CatParams extends Component {
 		});
 	}
 	handleGoBack = () => {
-		console.log('am clicked', this.props);
 		this.props.history.push('/');
 	};
 	render() {
