@@ -21,7 +21,7 @@ class Cats extends Component {
 		return (
 			<>
 				{total}
-				<div className='grey lighten-3 mainDiv'>{results}</div>
+				<div className=' mainDiv'>{results}</div>
 			</>
 		);
 	}

@@ -41,13 +41,15 @@ class CatParams extends Component {
 				</h5>
 				<h5 className='card-title black-text'>Hair Less: {cat.hairless}</h5>
 				<p className='black-text '>Description: {cat.description}</p>
-				<i
-					onClick={this.handleGoBack}
-					className='material-icons '
-					style={{ cursor: 'pointer', marginTop: '15px' }}
-				>
-					arrow_back
-				</i>
+				<a className="btn-floating btn-large waves-effect waves-light black">	<i
+						onClick={this.handleGoBack}
+						className='material-icons orange-text  '
+						//style={{ cursor: 'pointer', marginTop: '15px' }}
+					>
+						arrow_back
+					</i></a>
+				
+			
 			</div>
 		) : (
 			<div className='center'>Loading Cat...</div>
