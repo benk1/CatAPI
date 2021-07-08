@@ -12,7 +12,7 @@ class CatParams extends Component {
 			this.setState({
 				cat: res.data,
 			});
-			console.log(res);
+			console.log('Obj', res.data);
 		});
 	}
 	handleGoBack = () => {
@@ -20,6 +20,7 @@ class CatParams extends Component {
 	};
 	render() {
 		const { cat } = this.state;
+		
 		const catResults = cat ? (
 			<div className='post'>
 				<h5 className='black-text '>Name: {cat.name}</h5>
@@ -41,15 +42,16 @@ class CatParams extends Component {
 				</h5>
 				<h5 className='card-title black-text'>Hair Less: {cat.hairless}</h5>
 				<p className='black-text '>Description: {cat.description}</p>
-				<a className="btn-floating btn-large waves-effect waves-light black">	<i
+				<a className='btn-floating btn-large waves-effect waves-light black'>
+					{' '}
+					<i
 						onClick={this.handleGoBack}
 						className='material-icons orange-text  '
 						//style={{ cursor: 'pointer', marginTop: '15px' }}
 					>
 						arrow_back
-					</i></a>
-				
-			
+					</i>
+				</a>
 			</div>
 		) : (
 			<div className='center'>Loading Cat...</div>

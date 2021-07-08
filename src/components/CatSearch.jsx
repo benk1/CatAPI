@@ -8,7 +8,7 @@ const CatSearch = ({ handleChange, searchText }) => {
 					<input
 						onChange={handleChange}
 						type='text'
-						placeholder='Search'
+						placeholder='Search...'
 						value={searchText}
 					/>
 					<label htmlFor='icon_prefix2'>Search By Cat </label>
