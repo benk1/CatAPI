@@ -43,11 +43,15 @@ body {
 .trial {
 	display: flex;
 }
-img {
-	width: 20vh;
-	height: 20vh;
+/*img {
+	width: 10vh;
+	height: 10vh;
 	border-radius: 0.3rem;
 	box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+}*/
+img {
+	width: 600px;
+	height: 300px;
 }
 p {
 	font-size: 22px;
@@ -60,4 +64,9 @@ p {
 
 .material-icons {
 	font-size: 76px;
+}
+
+.card {
+	border: none 'important';
+	box-shadow: none !important;
 }
