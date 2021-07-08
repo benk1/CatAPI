@@ -10,14 +10,6 @@ class CatParams extends Component {
 
 	async componentDidMount() {
 		let id = this.props.match.params.cat_id;
-<<<<<<< HEAD
-		axios.get('https://api.thecatapi.com/v1/breeds/' + id).then((res) => {
-			this.setState({
-				cat: res.data,
-			});
-			console.log('Obj', res.data);
-=======
-		//let id = this.props.id;
 		const catDataUrl = 'https://api.thecatapi.com/v1/breeds/';
 		const searchImgUrl = 'https://api.thecatapi.com/v1/images/search?breed_id=';
 		const [catResponse, imageResponse] = await Promise.all([
@@ -35,7 +27,6 @@ class CatParams extends Component {
 			cat: catResponse.data,
 			image: imageResponse.data,
 			isLoading: false,
->>>>>>> 837d3c1f11ee43c51802c5bdc5069bb0e1431f14
 		});
 		console.log('RES FROM CDM CatParams', catResponse.data);
 	}
@@ -68,10 +59,6 @@ class CatParams extends Component {
 		this.props.history.push('/');
 	};
 	render() {
-<<<<<<< HEAD
-		const { cat } = this.state;
-		
-=======
 		const { cat, isLoading, image } = this.state;
 		console.log('IN RENDER', cat);
 
@@ -79,7 +66,6 @@ class CatParams extends Component {
 
 		console.log('FROMPARAMS', cat);
 
->>>>>>> 837d3c1f11ee43c51802c5bdc5069bb0e1431f14
 		const catResults = cat ? (
 			<div className='card white lighten-4 post'>
 				<h5 className='black-text '>Name: {cat.name}</h5>
