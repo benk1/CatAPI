@@ -29,11 +29,12 @@ class App extends Component {
 	state = {
 		cats: [],
 		searchText: '',
+		imageUrl: '',
 	};
 
 	async componentDidMount() {
 		const { data: cats } = await axios.get(apiEndPoint);
-		//console.log(cats.slice(0,5));
+		//console.log('FROM APP', cats.slice(0, 5));
 		this.setState({
 			cats: cats,
 		});
@@ -70,14 +71,18 @@ class App extends Component {
 				</div>
 
 				<SearchBar handleChange={this.handleChange} searchText={searchText} />
-
 				<Switch>
 					<Route
 						exact
 						path='/'
 						render={(props) => <Cats {...props} cats={filteredCatsByName} />}
 					/>
-					<Route path='/:cat_id' component={CatParams} />
+					<Route
+						path='/:cat_id'
+						render={(props) => (
+							<CatParams {...props} cats={filteredCatsByName} />
+						)}
+					/>
 				</Switch>
 			</div>
 		);
