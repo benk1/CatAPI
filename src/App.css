@@ -50,7 +50,7 @@ body {
 	box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
 }*/
 img {
-	width: 600px;
+	width: 440px;
 	height: 300px;
 }
 p {
@@ -69,4 +69,7 @@ p {
 .card {
 	border: none 'important';
 	box-shadow: none !important;
+	/* box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1); */
+}
+.shadow {
 }

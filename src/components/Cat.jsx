@@ -15,28 +15,28 @@ const Cat = ({
 	//console.log('in Cat Component', id);
 	return (
 		<>
-			<div className='row center' key={id}>
-				<div className='col s12 m6 l8'>
-					<div className=' card orange lighten-1'>
-						<div className='card-content white-text  '>
+			<div className="row center" key={id}>
+				<div className="col s12 m6 l8">
+					<div className=" card orange lighten-1">
+						<div className="card-content white-text  ">
 							<NavLink to={'/' + id}>
-								<span className='card-title blue-text darken-5'>
+								<span className="card-title blue-text darken-5">
 									Name: {name}
 								</span>
 							</NavLink>
 
-							<span className='card-title origin black-text accent-4'>
+							<span className="card-title origin black-text accent-4">
 								Origin: {origin}
 							</span>
 
-							<span className='card-title origin black-text accent-4'>
+							<span className="card-title origin black-text accent-4">
 								Life Span: {life_span} Years
 							</span>
-							<span className='card-title origin black-text accent-4'>
+							<span className="card-title origin black-text accent-4">
 								Weight: {weight.metric} Kg
 							</span>
 
-							<p className='black-text accent-4'>{description}</p>
+							<p className="black-text accent-4">{description}</p>
 						</div>
 					</div>
 				</div>
