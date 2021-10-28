@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CatAPI/static/css/main.7b88c088.chunk.css",
+    "main.css": "/CatAPI/static/css/main.fbd4690c.chunk.css",
     "main.js": "/CatAPI/static/js/main.b663bd38.chunk.js",
     "main.js.map": "/CatAPI/static/js/main.b663bd38.chunk.js.map",
     "runtime-main.js": "/CatAPI/static/js/runtime-main.130c4ff4.js",
@@ -8,14 +8,14 @@
     "static/js/2.7b62f737.chunk.js": "/CatAPI/static/js/2.7b62f737.chunk.js",
     "static/js/2.7b62f737.chunk.js.map": "/CatAPI/static/js/2.7b62f737.chunk.js.map",
     "index.html": "/CatAPI/index.html",
-    "precache-manifest.09455e6b521391ef9ebbd64a964860ca.js": "/CatAPI/precache-manifest.09455e6b521391ef9ebbd64a964860ca.js",
+    "precache-manifest.cda14af109533b12fbe597a64f034869.js": "/CatAPI/precache-manifest.cda14af109533b12fbe597a64f034869.js",
     "service-worker.js": "/CatAPI/service-worker.js",
-    "static/css/main.7b88c088.chunk.css.map": "/CatAPI/static/css/main.7b88c088.chunk.css.map"
+    "static/css/main.fbd4690c.chunk.css.map": "/CatAPI/static/css/main.fbd4690c.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.130c4ff4.js",
     "static/js/2.7b62f737.chunk.js",
-    "static/css/main.7b88c088.chunk.css",
+    "static/css/main.fbd4690c.chunk.css",
     "static/js/main.b663bd38.chunk.js"
   ]
 }
